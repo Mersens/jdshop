@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jcwl.jdshop"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <!-- 网络 -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
+	<uses-permission android:name="android.permission.INTERNET" />  
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />  
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  
+	
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+      <!--   <activity android:name=".MainActivity" android:screenOrientation="portrait" android:launchMode="singleInstance"/> -->
+        <activity
+            android:name="com.jcwl.jdshop.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" 
+            android:launchMode="singleInstance"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="com.jcwl.jdshop.Activity_Web" android:screenOrientation="portrait"/>
+        
+         <activity android:name="com.jcwl.jdshop.a.Activity_A" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+         <activity android:name="com.jcwl.jdshop.b.Activity_B" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+         <activity android:name="com.jcwl.jdshop.c.Activity_C" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+         <activity android:name="com.jcwl.jdshop.d.Activity_D" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+         <activity android:name="com.jcwl.jdshop.e.Activity_E" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        
+        
+    </application>
+
+</manifest>

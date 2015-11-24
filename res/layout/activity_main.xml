@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    >
+
+    <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@+id/radiogroup" >
+                </FrameLayout>
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/activity_main_bottom_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_above="@+id/radiogroup"
+                    android:background="@drawable/nav_top_line"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/radiogroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" 
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="4dp"
+                    android:background="#424242">
+
+                    <ImageView
+                        android:id="@+id/radio_a"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.0"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nav_a_click"
+                        android:button="@null" 
+                        android:clickable="true"
+                        android:onClick="onNavClick"
+                        android:contentDescription="@null"/>
+
+                    <ImageView
+                        android:id="@+id/radio_b"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.0"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nav_b_normal"
+                        android:button="@null" 
+                        android:clickable="true"
+                        android:onClick="onNavClick"
+                        android:contentDescription="@null"/>
+
+                    <ImageView
+                        android:id="@+id/radio_c"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.0"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nav_c_normal"
+                        android:button="@null" 
+                        android:clickable="true"
+                        android:onClick="onNavClick"
+                        android:contentDescription="@null"/>
+
+                    <ImageView
+                        android:id="@+id/radio_d"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.0"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nav_d_normal"
+                        android:button="@null"
+                        android:clickable="true"
+                        android:onClick="onNavClick"
+                        android:contentDescription="@null" />
+
+                    <ImageView
+                        android:id="@+id/radio_e"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.0"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nav_e_normal"
+                        android:button="@null" 
+                        android:clickable="true"
+                        android:onClick="onNavClick"
+                        android:contentDescription="@null"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </TabHost>
+
+</RelativeLayout>
